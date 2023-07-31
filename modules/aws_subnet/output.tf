@@ -1,0 +1,17 @@
+# public and private subnet id's will be used by aws_securitygroup, aws_route_table, aws_load_balancer & aws_autoscaling
+
+output "public_subnet_1" {
+  value = aws_subnet.public_subnet_1.id
+}
+
+output "public_subnet_2" {
+  value = aws_subnet.public_subnet_2.id
+}
+
+output "private_subnet_1" {
+  value = aws_subnet.private_subnet_1.id
+}
+
+output "private_subnet_2" {
+  value = aws_subnet.private_subnet_2.id
+}
